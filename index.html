@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axiona, Inc. — Quiet Backbone Technology</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="logo" href="index.html" aria-label="Axiona, Inc. home">
+          <img src="assets/axionaLogo.png" alt="Axiona logo" />
+          <span>Axiona, Inc.</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#home">Home</a>
+          <a href="#what-we-do">What We Do</a>
+          <a href="#principles">Principles</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-login" href="login.html">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-content" data-animate>
+          <p class="eyebrow">Quiet backbone technology</p>
+          <h1>Systems that stay calm so your teams can stay focused.</h1>
+          <p class="hero-copy">
+            Axiona builds reliable digital foundations that reduce friction through clarity,
+            security, and long-term usability. We design for stability today and durability
+            tomorrow.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#what-we-do">Explore</a>
+            <a class="button ghost" href="login.html">Login</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="what-we-do" class="section">
+        <div class="container">
+          <h2>What We Do</h2>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Product Design</h3>
+              <p>
+                Calm interfaces and thoughtful workflows that remove friction and guide
+                decisions with clarity.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Engineering Discipline</h3>
+              <p>
+                Secure, precise systems built with rigorous standards and resilient
+                infrastructure.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Operational Simplicity</h3>
+              <p>
+                Clean, maintainable platforms that support steady growth and long-term
+                usability.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="principles" class="section section-muted">
+        <div class="container">
+          <h2>Principles</h2>
+          <ul class="principles-list">
+            <li>Precision over excess</li>
+            <li>Substance over spectacle</li>
+            <li>Systems thinking</li>
+            <li>Long-term responsibility</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <form class="contact-form" id="contactForm">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@company.com" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
+            </label>
+            <button class="button primary" type="submit">Send message</button>
+            <p class="form-message" id="contactMessage" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© Axiona, Inc.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
